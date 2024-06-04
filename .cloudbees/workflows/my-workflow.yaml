@@ -26,3 +26,8 @@ jobs:
         kind: scan
         with:
           language: GO
+      - uses: cloudbees-io/gosec-sast-scan-code@v1
+        name: Custom scan
+        kind: scan
+        with:
+          language: GO
