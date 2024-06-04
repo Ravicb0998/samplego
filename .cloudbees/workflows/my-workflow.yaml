@@ -30,4 +30,4 @@ jobs:
         name: Custom scan
         kind: scan
         with:
-          language: LANGUAGE_GO
+          language: GO
