@@ -19,6 +19,11 @@ jobs:
         uses: docker://golang:1.20
         run: |
           go build -v ./...
+      - id: run-bundled-sonar-scan
+        name: Run sonarqube bundled action from platform
+        uses: cloudbees-io/sonarqube-bundled-sast-scan-code@v1
+        with:
+          language: "LANGUAGE_GO"
       - name: Run tests
         uses: docker://golang:1.20
         run: |
